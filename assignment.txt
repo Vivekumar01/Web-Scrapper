@@ -1,0 +1,48 @@
+General Instructions
+======================
+1. Usage of any resources like google search, stackoverflow are ALLOWED
+2. English Grammar is not important in code (as long as meaning is communicated properly)
+3. Please add comments in code to help understand the code better
+4. Assignments SHOULD be submitted before deadline
+
+
+
+Assignment Submission Instructions
+====================================
+1. Code should be submitted as .py files and instructions to run the code should be specified clearly
+2. Data provided for the assignments should NOT be shared with anyone strictly
+3. You can work on any ONE or ALL of the assignment problems
+4. Assignments will be evaluated on a first cum first serve basis
+5. Any libraries used should be mentioned and instructions to install those libraries should be also mentioned
+6. Performance (time taken by the code to run) will also be taken into consideration
+
+
+
+Problem # 1 - Web scraper/Crawler
+=================================
+Write a web crawler (you can use any library such as BeautifulSoup, selenium etc.,) which does the following:
+1. Read data from the amazon product web page (https://www.amazon.in/LG-24-inch-Monitor-Freesync-Borderless/dp/B08J5Y9ZSV/ref=sr_1_2?dchild=1&pf_rd_i=976392031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=fdf29120-98d8-40f7-810a-585fb8aa67c1&pf_rd_r=9NSA2WH49QR1TJ0815CK&pf_rd_s=merchandised-search-4&pf_rd_t=101&qid=1634737622&smid=A14CZOWI0VEHLG&sr=8-2&th=1) 
+2. Using code read access the ratings of the product 
+3. Read all the top reviews of the product in the ratings page for this product
+4. Read review text, review posted on date, review posted by person (name)
+5. Write this data to an excel file with three columns (reviewer, posted_date, review_text)
+6. Put both the python code files and output excel data file in a zip file and submit this zip file for the assignment
+
+
+Problem # 2 - Data processing
+=============================
+You need to read data from a file and build a REST API (using any web framework such as Fastapi, Flask, Django etc.,). Details are as below:
+1. Use the file provided (data.csv) file to read data from
+2. Extract the column with name experienceMas, parse the number of years of experience (if experience is in months use 0 as number of years)
+3. Categories the experience years into buckets 0-10, 11-20, 21-30, 31-40 so on
+4. Count the number of people in each experience bucket.
+5. Build a REST API which should provide the experience data as response in format like below (example response not actual values):
+{
+ "0-10": 29,
+ "11-20": 41,
+ "31-40": 5,
+ "21-30": 12
+}
+6. Put code files and API response in a text file in zip file and upload as submission
+7. Data might contain null values, invalid characters etc., which need to be handled/removed  appropriately
+ 
